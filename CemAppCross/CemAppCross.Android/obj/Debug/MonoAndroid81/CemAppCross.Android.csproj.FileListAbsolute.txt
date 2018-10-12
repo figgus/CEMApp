@@ -4,7 +4,6 @@ C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCros
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\com.companyname.CemAppCross-Signed.apk
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\CemAppCross.dll
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\CemAppCross.pdb
-C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\CemAppCross.dll.mdb
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\obj\Debug\MonoAndroid81\CemAppCross.Android.csprojAssemblyReference.cache
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\obj\Debug\MonoAndroid81\res.flag
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\obj\Debug\MonoAndroid81\CemAppCross.Android.csproj.CoreCompileInputs.cache
@@ -52,6 +51,7 @@ C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCros
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\System.Xml.pdb
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\Xamarin.Forms.Core.pdb
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\Xamarin.Forms.Xaml.pdb
+C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\CemAppCross.dll.mdb
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\FormsViewGroup.dll.mdb
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\bin\Debug\Xamarin.Forms.Platform.Android.dll.mdb
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross.Android\obj\Debug\MonoAndroid81\linksrc\CemAppCross.Android.pdb

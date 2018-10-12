@@ -24,7 +24,7 @@ namespace CemAppCross.Views
             Username = this.FindByName<Entry>("txtusername");
             Password = this.FindByName<Entry>("txtpassword");
             Ingresar = this.FindByName<Button>("btnIngresar");
-
+            
             Ingresar.Pressed += Ingresar_Pressed;
 		}
 
@@ -53,7 +53,7 @@ namespace CemAppCross.Views
             
             if (res)
             {
-                await Navigation.PushModalAsync(new MainPage());
+                await Navigation.PushModalAsync(new Panel());
             }
             else
             {
