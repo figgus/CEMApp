@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CemAppCross.Views.CrearUsuario">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Entry  x:Name="txtUsername" Placeholder="Nombre de usuario" />
+                <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Password" />
+                <Entry x:Name="txtpnombre" Placeholder="Primer nombre" />
+                <Entry x:Name="txtsnombre" Placeholder="Segundo nombre" />
+                <Entry x:Name="txtappat" Placeholder="Apellido parterno" />
+                <Entry x:Name="txtapmat" Placeholder="Apellido materno" />
+                <Entry x:Name="txtEmail" Placeholder="Email" />
+                <Entry x:Name="txtCelular" Placeholder="Celular" />
+                <Entry x:Name="txtFonoFijo" Placeholder="fonoFijo" />
+                <Picker x:Name="tipoUsuario" Title="" />
+                <BoxView x:Name="alumnoRegular"/>
+                
+                <Button x:Name="btnGuardarUser" Text="Guardar" VerticalOptions="EndAndExpand"/>
+
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

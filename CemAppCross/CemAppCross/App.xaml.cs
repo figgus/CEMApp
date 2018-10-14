@@ -14,7 +14,7 @@ namespace CemAppCross
             InitializeComponent();
 
 
-            MainPage = new Login();
+            MainPage = new Panel();
         }
 
         protected override void OnStart()
