@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CemAppCross.Views.DetallesUser">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout>
+                <Label Text="Welcome to Xamarin.Forms!"
+                VerticalOptions="CenterAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Entry  x:Name="txtUsername" Placeholder="Nombre de usuario" />
+                <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Password" />
+                <Entry x:Name="txtpnombre" Placeholder="Primer nombre" />
+                <Entry x:Name="txtsnombre" Placeholder="Segundo nombre" />
+                <Entry x:Name="txtappat" Placeholder="Apellido parterno" />
+                <Entry x:Name="txtapmat" Placeholder="Apellido materno" />
+                <Entry x:Name="txtEmail" Placeholder="Email" />
+                <Entry x:Name="txtCelular" Placeholder="Celular" />
+                <Entry x:Name="txtFonoFijo" Placeholder="fonoFijo" />
+                <Picker x:Name="tipoUsuario" Title="" />
+                <Entry x:Name="txtalumnoRegular" Placeholder="fonoFijo" />
+                <Button Text="Eliminar" BackgroundColor="Red"/>
+                <Button Text="Actualizar" />
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

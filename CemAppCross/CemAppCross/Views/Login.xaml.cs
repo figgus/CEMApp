@@ -24,7 +24,7 @@ namespace CemAppCross.Views
             Username = this.FindByName<Entry>("txtusername");
             Password = this.FindByName<Entry>("txtpassword");
             Ingresar = this.FindByName<Button>("btnIngresar");
-            
+            Loguear();
             Ingresar.Pressed += Ingresar_Pressed;
 		}
 

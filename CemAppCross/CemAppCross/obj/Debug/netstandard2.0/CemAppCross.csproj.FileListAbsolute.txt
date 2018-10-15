@@ -13,3 +13,4 @@ C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCros
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross\obj\Debug\netstandard2.0\CemAppCross.dll
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross\obj\Debug\netstandard2.0\CemAppCross.pdb
 C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross\obj\Debug\netstandard2.0\CemAppCross.csprojAssemblyReference.cache
+C:\Users\joaquin\Documents\Visual Studio 2017\CemAppCross\CemAppCross\CemAppCross\obj\Debug\netstandard2.0\Views\DetallesUser.xaml.g.cs

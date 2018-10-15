@@ -1,4 +1,5 @@
 ﻿using CemAppCross.Clases;
+using CemAppCross.ViewModels;
 using CemAppCross.Views;
 using Newtonsoft.Json;
 using System;
@@ -17,6 +18,7 @@ namespace CemAppCross
     public partial class Panel : TabbedPage
     {
         Button CrearUser;
+        List<Usuario> listaUsuariosPasar;
         public Panel ()
         {
             InitializeComponent();
@@ -26,16 +28,28 @@ namespace CemAppCross
             listaUsuarios.ItemSelected += ListaUsuarios_ItemSelected;
         }
 
+       
+
         private void ListaUsuarios_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
-            var clickeado = (Button)e.SelectedItem;
-            DisplayAlert("asd",clickeado.Text,"asd");
+
+            if (listaUsuariosPasar==null)
+            {
+                DisplayAlert("Error","Lista vacia","Ok");
+            }
+            else
+            {
+                int SelectedId = int.Parse( e.SelectedItem.ToString()[0].ToString());
+                var user = listaUsuariosPasar.Where(p=>p.idUsuario==SelectedId);
+                Navigation.PushModalAsync(new DetallesUser(user.ToList<Usuario>()[0]));
+            }
+            
         }
 
         private void CrearUser_Pressed(object sender, EventArgs e)
         {
             
-            Navigation.PushModalAsync(new CrearUsuario());
+            Navigation.PushModalAsync(new CrearUsuario(),true);
         }
 
         private async void TraerDatos()
@@ -45,9 +59,10 @@ namespace CemAppCross
 
             List<Usuario> datos = JsonConvert.DeserializeObject<List<Usuario>>(response);
             string[] nombres = new string[datos.Count];
+            listaUsuariosPasar = datos;
             for (int i=0;i<nombres.Length;i++)
             {
-                nombres[i] = string.Format("{0} {1} {2} {3}",datos[i].pnombre, datos[i].snombre, datos[i].appat, datos[i].apmat);
+                nombres[i] = string.Format("{0}- {1} {2} {3}  {4}",datos[i].idUsuario ,datos[i].pnombre, datos[i].snombre, datos[i].appat, datos[i].apmat);
             }
             listaUsuarios.ItemsSource = nombres;
         }
