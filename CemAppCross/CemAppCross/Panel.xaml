@@ -3,13 +3,17 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="CemAppCross.Panel">
   <!--Pages can be added as references or inline-->
-    <ContentPage Title="Usuarios" >
+    <ContentPage Title="Usuarios" x:Name="TabUsers" >
+        <ScrollView>
+            <Grid>
+                <ListView x:Name="listaUsuarios" HorizontalOptions="Fill" VerticalOptions="Center">
+                </ListView>
+
+                <Button x:Name="btnCrearUser" Text="Crear nuevo usuario" HorizontalOptions="Fill" VerticalOptions="End"/>
+
+            </Grid>
+        </ScrollView>
         
-        <Grid>
-            <ListView x:Name="listaUsuarios" HorizontalOptions="Fill" VerticalOptions="Center">
-            </ListView>
-            <Button x:Name="btnCrearUser" Text="Crear nuevo usuario" HorizontalOptions="Fill" VerticalOptions="End"/>
-        </Grid>
         
     </ContentPage>
     <ContentPage Title="Tab 2" />

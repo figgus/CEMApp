@@ -5,9 +5,10 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout>
-                <Label Text="Welcome to Xamarin.Forms!"
+                <Label Text="Ingrese la informacion que desea editar"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+                <Entry Placeholder="" x:Name="txtIdUsuario" IsEnabled="False" />
                 <Entry  x:Name="txtUsername" Placeholder="Nombre de usuario" />
                 <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Password" />
                 <Entry x:Name="txtpnombre" Placeholder="Primer nombre" />
@@ -17,10 +18,10 @@
                 <Entry x:Name="txtEmail" Placeholder="Email" />
                 <Entry x:Name="txtCelular" Placeholder="Celular" />
                 <Entry x:Name="txtFonoFijo" Placeholder="fonoFijo" />
-                <Picker x:Name="tipoUsuario" Title="" />
+                <Picker x:Name="tipoUsuario" Title="Tipo de usuario" />
                 <Entry x:Name="txtalumnoRegular" Placeholder="fonoFijo" />
-                <Button Text="Eliminar" BackgroundColor="Red"/>
-                <Button Text="Actualizar" />
+                <Button x:Name="btnEliminar" Text="Eliminar" BackgroundColor="Red"/>
+                <Button x:Name="btnEditar" Text="Actualizar" />
             </StackLayout>
         </ScrollView>
         

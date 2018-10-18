@@ -28,7 +28,7 @@ namespace CemAppCross
             listaUsuarios.ItemSelected += ListaUsuarios_ItemSelected;
         }
 
-       
+        
 
         private void ListaUsuarios_ItemSelected(object sender, SelectedItemChangedEventArgs e)
         {
