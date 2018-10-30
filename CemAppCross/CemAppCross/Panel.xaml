@@ -4,7 +4,7 @@
              x:Class="CemAppCross.Panel">
   <!--Pages can be added as references or inline-->
     <ContentPage Title="Usuarios" x:Name="TabUsers" >
-        <ScrollView>
+        <ScrollView BackgroundColor="BurlyWood">
             <Grid>
                 <ListView x:Name="listaUsuarios" HorizontalOptions="Fill" VerticalOptions="Center">
                 </ListView>
@@ -16,6 +16,18 @@
         
         
     </ContentPage>
-    <ContentPage Title="Tab 2" />
-  <ContentPage Title="Tab 3" />
+    <ContentPage Title="Notas" >
+        <ScrollView BackgroundColor="BurlyWood">
+            <Grid>
+                <ListView x:Name="listaNotas" HorizontalOptions="Fill" VerticalOptions="Center">
+                </ListView>
+
+                <Button x:Name="btnAgregarNota" Text="Crear nuevo usuario" HorizontalOptions="Fill" VerticalOptions="End"/>
+
+            </Grid>
+        </ScrollView>
+    </ContentPage>
+    <ContentPage Title="Ajustes" BackgroundColor="BurlyWood" >
+        <Button x:Name="btnCerrarSesion" Text="Cerrar sesion" HorizontalOptions="Fill" VerticalOptions="End"/>
+    </ContentPage>
 </TabbedPage>

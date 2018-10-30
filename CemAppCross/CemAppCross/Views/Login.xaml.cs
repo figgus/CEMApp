@@ -14,18 +14,26 @@ namespace CemAppCross.Views
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class Login : ContentPage
 	{
-        Entry Username;
-        Entry Password;
         Button Ingresar;
         
 		public Login ()
 		{
-			InitializeComponent ();
-            Username = this.FindByName<Entry>("txtusername");
-            Password = this.FindByName<Entry>("txtpassword");
+			InitializeComponent();
+            try
+            {
+                
+                if (App.Current.Properties["Logeado"].ToString() == "true")
+                {
+                    Navigation.PushModalAsync(new Panel());
+                }
+            }
+            catch (Exception e)
+            {
+                DisplayAlert("asd", "No funciono", "ok");
+            }
             Ingresar = this.FindByName<Button>("btnIngresar");
-            Loguear();
             Ingresar.Pressed += Ingresar_Pressed;
+            
 		}
 
         private void Ingresar_Pressed(object sender, EventArgs e)
@@ -53,6 +61,8 @@ namespace CemAppCross.Views
             
             if (res)
             {
+                App.Current.Properties.Add("Logeado", "true");
+                await App.Current.SavePropertiesAsync();
                 await Navigation.PushModalAsync(new Panel());
             }
             else

@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CemAppCross.Views.DetallesNota">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="BurlyWood">
+                <Label Text="Ingrese los datos que desea editar"
+                VerticalOptions="StartAndExpand" 
+                HorizontalOptions="CenterAndExpand" />
+                <Entry x:Name="txtIdNota" />
+                <Entry x:Name="txtCalificacion" />
+                <Entry x:Name="txtFecha"/>
+                <Entry x:Name="txtNumeral" />
+                <Entry x:Name="txtUsuario" />
+                <Entry x:Name="txtProgramaEstudio" />
+                <Button x:Name="btnEliminar" Text="Eliminar" BackgroundColor="Red"/>
+                <Button x:Name="btnEditar" Text="Actualizar" />
+            </StackLayout>
+        </ScrollView>
+        
+    </ContentPage.Content>
+</ContentPage>

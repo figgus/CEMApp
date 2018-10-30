@@ -4,7 +4,7 @@
              x:Class="CemAppCross.Views.DetallesUser">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout BackgroundColor="BurlyWood">
                 <Label Text="Ingrese la informacion que desea editar"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />

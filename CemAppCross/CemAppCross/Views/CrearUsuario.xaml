@@ -4,7 +4,7 @@
              x:Class="CemAppCross.Views.CrearUsuario">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout>
+            <StackLayout BackgroundColor="BurlyWood">
                 <Entry  x:Name="txtUsername" Placeholder="Nombre de usuario" />
                 <Entry x:Name="txtPassword" IsPassword="True" Placeholder="Password" />
                 <Entry x:Name="txtpnombre" Placeholder="Primer nombre" />
