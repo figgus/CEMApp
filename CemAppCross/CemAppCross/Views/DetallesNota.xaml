@@ -8,12 +8,12 @@
                 <Label Text="Ingrese los datos que desea editar"
                 VerticalOptions="StartAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
-                <Entry x:Name="txtIdNota" />
-                <Entry x:Name="txtCalificacion" />
-                <Entry x:Name="txtFecha"/>
-                <Entry x:Name="txtNumeral" />
-                <Entry x:Name="txtUsuario" />
-                <Entry x:Name="txtProgramaEstudio" />
+                <Entry x:Name="txtIdNota" Placeholder="id"/>
+                <Entry x:Name="txtCalificacion" Placeholder="calificacion"/>
+                <DatePicker x:Name="txtFecha" />
+                <Entry x:Name="txtNumeral" Placeholder="Numeral"/>
+                <Entry x:Name="txtUsuario" Placeholder="ID usuario" />
+                <Entry x:Name="txtProgramaEstudio" Placeholder="ID programa estudio" />
                 <Button x:Name="btnEliminar" Text="Eliminar" BackgroundColor="Red"/>
                 <Button x:Name="btnEditar" Text="Actualizar" />
             </StackLayout>

@@ -20,7 +20,11 @@ namespace CemAppCross.Views
             NotaParam = nota;
             txtIdNota.Text = NotaParam.idNota.ToString();
             txtCalificacion.Text = NotaParam.calificacion.ToString();
-            txtFecha.Text = NotaParam.fecha.ToString();
+            DateTime dt;
+            if (DateTime.TryParse(NotaParam.fecha.ToString(),out dt))
+            {
+                txtFecha.Date = dt;
+            }
             txtNumeral.Text = NotaParam.numeral.ToString();
             txtUsuario.Text = NotaParam.idUsuarioFK.ToString();
             txtProgramaEstudio.Text = NotaParam.idProgramaEstudiosFK.ToString();

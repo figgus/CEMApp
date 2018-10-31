@@ -9,7 +9,11 @@
                 <ListView x:Name="listaUsuarios" HorizontalOptions="Fill" VerticalOptions="Center">
                 </ListView>
 
-                <Button x:Name="btnCrearUser" Text="Crear nuevo usuario" HorizontalOptions="Fill" VerticalOptions="End"/>
+                <StackLayout HorizontalOptions="Fill" VerticalOptions="End" Orientation="Horizontal">
+                    <Button x:Name="btnCrearUser" Text="Crear usuario" />
+                    <Button x:Name="btnActualizarUsers" Text="Actualizar"/>
+                </StackLayout>
+                
 
             </Grid>
         </ScrollView>
@@ -21,8 +25,11 @@
             <Grid>
                 <ListView x:Name="listaNotas" HorizontalOptions="Fill" VerticalOptions="Center">
                 </ListView>
-
-                <Button x:Name="btnAgregarNota" Text="Crear nuevo usuario" HorizontalOptions="Fill" VerticalOptions="End"/>
+                <StackLayout HorizontalOptions="Fill" VerticalOptions="End" Orientation="Horizontal">
+                    <Button x:Name="btnAgregarNota" Text="Crear nuevo usuario"/>
+                    <Button x:Name="btnActualizarNota" Text="Actualizar"/>
+                </StackLayout>
+                
 
             </Grid>
         </ScrollView>

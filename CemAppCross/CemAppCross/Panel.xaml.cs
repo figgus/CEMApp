@@ -31,6 +31,18 @@ namespace CemAppCross
             listaNotas.ItemSelected += ListaNotas_ItemSelected;
             btnAgregarNota.Pressed += BtnAgregarNota_Pressed;
             btnCerrarSesion.Pressed += BtnCerrarSesion_Pressed;
+            btnActualizarUsers.Pressed += BtnActualizarUsers_Pressed;
+            btnActualizarNota.Pressed += BtnActualizarNota_Pressed;
+        }
+
+        private void BtnActualizarNota_Pressed(object sender, EventArgs e)
+        {
+            TraerDatos();
+        }
+
+        private void BtnActualizarUsers_Pressed(object sender, EventArgs e)
+        {
+            TraerDatos();
         }
 
         private void BtnCerrarSesion_Pressed(object sender, EventArgs e)

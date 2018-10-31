@@ -23,7 +23,7 @@ namespace CemAppCross.Views {
         private global::Xamarin.Forms.Entry txtCalificacion;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
-        private global::Xamarin.Forms.Entry txtFecha;
+        private global::Xamarin.Forms.DatePicker txtFecha;
         
         [global::System.CodeDom.Compiler.GeneratedCodeAttribute("Xamarin.Forms.Build.Tasks.XamlG", "2.0.0.0")]
         private global::Xamarin.Forms.Entry txtNumeral;
@@ -45,7 +45,7 @@ namespace CemAppCross.Views {
             global::Xamarin.Forms.Xaml.Extensions.LoadFromXaml(this, typeof(DetallesNota));
             txtIdNota = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtIdNota");
             txtCalificacion = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtCalificacion");
-            txtFecha = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtFecha");
+            txtFecha = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.DatePicker>(this, "txtFecha");
             txtNumeral = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtNumeral");
             txtUsuario = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtUsuario");
             txtProgramaEstudio = global::Xamarin.Forms.NameScopeExtensions.FindByName<global::Xamarin.Forms.Entry>(this, "txtProgramaEstudio");
